@@ -7,7 +7,7 @@ export interface InsightCartPayload{
 }
 
 export async function getInsightCartPayload(): Promise<InsightCartPayload>{
-    const res = await fetch(`$process.env.NEXT_PUBLIC_API_ORIGIN}/`,{
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_ORIGIN}/`,{
        // force Server Component fetch, skip Next cache while iterating
        cache: 'no-store',
        headers: {'Accept': 'application/json'}, 
