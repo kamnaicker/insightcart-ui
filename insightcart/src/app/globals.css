@@ -116,7 +116,5 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+  body { @apply bg-[radial-gradient(circle_at_1px_1px,theme(colors.slate.800)_1px,transparent_0)] bg-[size:20px_20px]; }
 }
